@@ -36,7 +36,7 @@
 
 <style scoped>
 .container {
-  width: 100vw;
+  max-width: 700px;
 }
 
 .title {
