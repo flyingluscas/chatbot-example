@@ -14,18 +14,12 @@
         "firebase-debug.*.log",
         "*.local"
       ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run build"
-      ]
+      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run build"]
     }
   ],
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
@@ -37,6 +31,9 @@
     "rules": "storage.rules"
   },
   "emulators": {
+    "firestore": {
+      "port": 9099
+    },
     "functions": {
       "port": 5001
     },
@@ -48,7 +45,7 @@
     },
     "ui": {
       "enabled": true,
-      "port": 8080
+      "port": 3000
     },
     "singleProjectMode": true
   },

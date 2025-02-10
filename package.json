@@ -5,6 +5,7 @@
     "packages/backend/functions"
   ],
   "scripts": {
-    "start:app": "yarn workspace app run dev"
+    "start:app": "yarn workspace app run dev",
+    "start:backend": "yarn workspace functions build && cd packages/backend && firebase emulators:start"
   }
 }
